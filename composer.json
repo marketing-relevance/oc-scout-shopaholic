@@ -1,0 +1,16 @@
+{
+    "name": "mrelevance/scoutshopaholic",
+    "description": "Laravel Scout search for OctoberCMS Shopaholic plugin",
+    "type": "october-plugin",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Eric Pfeiffer",
+            "email": "eric@marketingrelevance.com"
+        }
+    ],
+    "require": {
+        "laravel/scout": "^7.2",
+        "yab/laravel-scout-mysql-driver": "^2.40"
+    }
+}
