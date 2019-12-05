@@ -40,7 +40,7 @@ Search Shopaholic Models using MySQL FULLTEXT Indexes
 ],
 ```
 
-Set SCOUT_DRIVER=mysql in your .env file
+Set `SCOUT_DRIVER=mysql` in your .env file
 
 Please note this Laravel Scout driver does not need to update any indexes when a Model is changed as this is handled natively by MySQL. Therefore you can safely disable queuing in config/scout.php.
 ```php
