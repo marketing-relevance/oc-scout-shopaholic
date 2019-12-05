@@ -1,6 +1,6 @@
 plugin:
-    name: 'mrelevance.scoutshopaholic::lang.plugin.name'
-    description: 'mrelevance.scoutshopaholic::lang.plugin.description'
+    name: 'marketingrelevance.scoutshopaholic::lang.plugin.name'
+    description: 'marketingrelevance.scoutshopaholic::lang.plugin.description'
     author: 'Marketing Relevance'
     icon: oc-icon-search
     homepage: 'https://github.com/mrelevance/oc-scout-shopaholic'

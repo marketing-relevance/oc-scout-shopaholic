@@ -48,8 +48,8 @@ class ExtendFieldHandler
     {
         $obWidget->addTabFields([
             'search_synonym' => [
-                'label' => 'Search Synonym',
-                'tab' => 'Search',
+                'label' => 'marketingrelevance.scoutshopaholic::lang.field.search_synonym',
+                'tab' => 'marketingrelevance.scoutshopaholic::lang.tab.search_content',
                 'span' => 'full',
                 'type' => 'textarea',
             ],

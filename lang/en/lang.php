@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'ScoutShopaholic',
+        'name' => 'Laravel Scout for Shopaholic',
         'description' => 'Shopaholic eCommerce extension: allows to search products, categories, tags, brands using laravel Scout.',
     ],
     'tab' => [

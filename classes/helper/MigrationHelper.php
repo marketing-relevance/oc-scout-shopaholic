@@ -12,6 +12,7 @@ class MigrationHelper
         $index = str_replace('lovata_', 'fulltext_', $tableName.'_index');
         $columns = [
             'name',
+            'code',
             'preview_text',
             'description',
             'search_synonym',
