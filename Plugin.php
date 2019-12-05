@@ -1,9 +1,7 @@
 <?php namespace MarketingRelevance\ScoutShopaholic;
 
-use MarketingRelevance\ScoutShopaholic\Classes\Event\ExtendFieldHandler;
-use MarketingRelevance\ScoutShopaholic\Classes\Event\ProductModelHandler;
-use System\Classes\PluginBase;
 use Event;
+use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {
@@ -15,20 +13,15 @@ class Plugin extends PluginBase
         $this->addEventListener();
     }
 
-    public function registerComponents()
-    {
-    }
-
-    public function registerSettings()
-    {
-    }
-
+    /**
+     * Add event listeners.
+     */
     protected function addEventListener()
     {
-        Event::subscribe(ExtendFieldHandler::class);
-        //Event::subscribe(BrandModelHandler::class);
-        //Event::subscribe(CategoryModelHandler::class);
-        Event::subscribe(ProductModelHandler::class);
-        //Event::subscribe(TagModelHandler::class);
+        Event::subscribe(Classes\Event\ExtendFieldHandler::class);
+        Event::subscribe(Classes\Event\BrandModelHandler::class);
+        Event::subscribe(Classes\Event\CategoryModelHandler::class);
+        Event::subscribe(Classes\Event\ProductModelHandler::class);
+        Event::subscribe(Classes\Event\TagModelHandler::class);
     }
 }

@@ -2,25 +2,29 @@
 
 namespace MarketingRelevance\ScoutShopaholic\Classes\Event;
 
-use Lovata\Shopaholic\Classes\Collection\ProductCollection;
 use Lovata\Shopaholic\Models\Product;
 use MarketingRelevance\ScoutShopaholic\Behaviors\SearchScoutModel;
 use MarketingRelevance\ScoutShopaholic\Classes\Helper\SearchHelper;
+use System\Classes\PluginManager;
 
-class ProductModelHandler
+class TagModelHandler
 {
     public function subscribe()
     {
-        Product::extend(function ($obModel) {
-            /** @var Product $obModel */
+        if (!PluginManager::instance()->hasPlugin('Lovata.TagsShopaholic')) {
+            return;
+        }
+
+        \Lovata\TagsShopaholic\Models\Tag::extend(function ($obModel) {
+            /** @var \Lovata\TagsShopaholic\Models\Tag $obModel */
             $obModel->fillable[] = 'search_synonym';
             $obModel->fillable[] = 'search_content';
 
             $obModel->implement[] = SearchScoutModel::class;
         });
 
-        ProductCollection::extend(function ($obCollection) {
-            /** @var ProductCollection $obCollection */
+        \Lovata\TagsShopaholic\Classes\Collection\TagCollection::extend(function ($obCollection) {
+            /** @var \Lovata\TagsShopaholic\Classes\Collection\TagCollection $obCollection */
             $obCollection->addDynamicMethod('searchScout', function ($sSearch) use ($obCollection) {
                 /** @var SearchHelper $obSearchHelper */
 
