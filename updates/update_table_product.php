@@ -2,6 +2,7 @@
 
 namespace MarketingRelevance\ScoutShopaholic\Updates;
 
+use MarketingRelevance\ScoutShopaholic\Classes\Helper\MigrationHelper;
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
 use Schema;
@@ -20,6 +21,9 @@ class UpdateTableProduct extends Migration
             $table->text('search_synonym')->nullable();
             $table->text('search_content')->nullable();
         });
+
+
+        MigrationHelper::addIndexes(self::TABLE);
     }
 
     public function down()
@@ -31,13 +35,7 @@ class UpdateTableProduct extends Migration
         Schema::table(self::TABLE, function (Blueprint $obTable) {
             $obTable->dropColumn(['search_synonym', 'search_content']);
         });
-    }
 
-    protected function addIndexes(string $tableName)
-    {
-        $index_name = str_replace('lovata_', 'fulltext_', $tableName.'_index');
-        $columns = [
-
-        ];
+        MigrationHelper::dropIndexes(self::TABLE);
     }
 }
