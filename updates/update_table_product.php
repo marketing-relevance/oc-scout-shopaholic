@@ -27,7 +27,7 @@ class UpdateTableProduct extends Migration
 
     public function down()
     {
-        if (!Schema::hasTable(self::TABLE) || !Schema::hasColumn(self::TABLE, 'search_synonym')) {
+        if (! Schema::hasTable(self::TABLE) || ! Schema::hasColumn(self::TABLE, 'search_synonym')) {
             return;
         }
 
