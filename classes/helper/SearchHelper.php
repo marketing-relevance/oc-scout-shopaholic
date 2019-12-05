@@ -40,6 +40,8 @@ class SearchHelper
             return $this->search()->get()->lists('id');
         } catch (\Exception $ex) {
             trace_log($ex);
+
+            return null;
         }
     }
 
