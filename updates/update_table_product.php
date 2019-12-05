@@ -22,7 +22,6 @@ class UpdateTableProduct extends Migration
             $table->text('search_content')->nullable();
         });
 
-
         MigrationHelper::addIndexes(self::TABLE);
     }
 
