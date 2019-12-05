@@ -1,7 +1,7 @@
-<?php namespace Mrelevance\ScoutShopaholic;
+<?php namespace MarketingRelevance\ScoutShopaholic;
 
-use Mrelevance\ScoutShopaholic\Classes\Event\ExtendFieldHandler;
-use Mrelevance\ScoutShopaholic\Classes\Event\ProductModelHandler;
+use MarketingRelevance\ScoutShopaholic\Classes\Event\ExtendFieldHandler;
+use MarketingRelevance\ScoutShopaholic\Classes\Event\ProductModelHandler;
 use System\Classes\PluginBase;
 use Event;
 

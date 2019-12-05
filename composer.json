@@ -1,5 +1,5 @@
 {
-    "name": "mrelevance/scoutshopaholic",
+    "name": "marketingrelevance/scoutshopaholic",
     "description": "Laravel Scout search for OctoberCMS Shopaholic plugin",
     "type": "october-plugin",
     "license": "GPL-3.0-or-later",

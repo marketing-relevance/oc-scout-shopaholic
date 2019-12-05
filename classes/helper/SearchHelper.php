@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrelevance\ScoutShopaholic\Classes\Helper;
+namespace MarketingRelevance\ScoutShopaholic\Classes\Helper;
 
 use Laravel\Scout\Builder;
 use Lovata\Toolbox\Traits\Helpers\TraitInitActiveLang;

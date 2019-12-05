@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrelevance\ScoutShopaholic\Behaviors;
+namespace MarketingRelevance\ScoutShopaholic\Behaviors;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Laravel\Scout\Builder;

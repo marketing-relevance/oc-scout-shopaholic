@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrelevance\ScoutShopaholic\Classes\Event;
+namespace MarketingRelevance\ScoutShopaholic\Classes\Event;
 
 use Lovata\Shopaholic\Controllers\Products;
 use Lovata\Shopaholic\Models\Product;

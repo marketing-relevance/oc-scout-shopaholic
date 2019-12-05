@@ -1,11 +1,11 @@
 <?php
 
-namespace Mrelevance\ScoutShopaholic\Classes\Event;
+namespace MarketingRelevance\ScoutShopaholic\Classes\Event;
 
 use Lovata\Shopaholic\Classes\Collection\ProductCollection;
 use Lovata\Shopaholic\Models\Product;
-use Mrelevance\ScoutShopaholic\Behaviors\SearchScoutModel;
-use Mrelevance\ScoutShopaholic\Classes\Helper\SearchHelper;
+use MarketingRelevance\ScoutShopaholic\Behaviors\SearchScoutModel;
+use MarketingRelevance\ScoutShopaholic\Classes\Helper\SearchHelper;
 
 class ProductModelHandler
 {

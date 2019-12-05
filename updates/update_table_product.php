@@ -1,6 +1,6 @@
 <?php
 
-namespace Mrelevance\ScoutShopaholic\Updates;
+namespace MarketingRelevance\ScoutShopaholic\Updates;
 
 use October\Rain\Database\Schema\Blueprint;
 use October\Rain\Database\Updates\Migration;
