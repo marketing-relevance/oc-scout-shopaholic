@@ -189,6 +189,7 @@ class SearchScoutModel extends ModelBehavior
     {
         return $this->model->setVisible([
             'name',
+            'code',
             'preview_text',
             'description',
             'search_synonym',
