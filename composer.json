@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "laravel/scout": "^7.1",
-        "yab/laravel-scout-mysql-driver": "^2.40"
+        "laravel/scout": "^8.5",
+        "yab/laravel-scout-mysql-driver": "^3.0"
     }
 }
