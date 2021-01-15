@@ -6,3 +6,5 @@
     - update_table_tag.php
 1.0.2:
     - 'Added missing code field to searchable array.'
+2.0.0:
+    - '!!! Support OctoberCMS v1.1, this will not work on OctoberCMS v1.0'
