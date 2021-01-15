@@ -1,6 +1,13 @@
 # Laravel Scout for Shopaholic plugin
 Shopaholic eCommerce extension: allows to search products, categories, tags, brands using laravel Scout.
 
+## Version Compatibility
+
+OctoberCMS  | Plugin
+:---------|:----------
+1.0.x    | `~1.0.0`
+1.1.x    | `^2.0.0` (supports semantic versioning)
+
 ## Description
 [Laravel Scout for Shopaholic](https://github.com/mrelevance/oc-scout-shopaholic) plugin adds fields **'search_synonym'**, **'search_content'**
 to [Product](https://github.com/lovata/oc-shopaholic-plugin/wiki/ProductModel),
